@@ -14,26 +14,23 @@ closenav.addEventListener("click",function(){
 
 
 
-var productContainer=document.getElementById("productContainer")
-
+var productContainer = document.getElementById("productContainer")
 var search = document.getElementById("search")
-var productlist = productContainer.querySelectorAll("div")
 
+// select ONLY product boxes
+var productlist = productContainer.querySelectorAll(".grid > div")
 
-search.addEventListener("keyup", function () {
-    var enteredValue = event.target.value.toUpperCase()
+search.addEventListener("keyup", function (event) {
 
-    for (count = 0; count <productlist.length; count = count + 1) {
+    var enteredValue = event.target.value.toLowerCase()
 
+    for (var count = 0; count < productlist.length; count++) {
 
-        var productname=productlist[count].querySelector("h1").textContent
-        if (productname.toUpperCase().indexOf(enteredValue)<0) {
+        var productname = productlist[count].querySelector("h1").textContent.toLowerCase()
 
+        if (productname.indexOf(enteredValue) === -1) {
             productlist[count].style.display = "none"
-        }
-
-        else {
-
+        } else {
             productlist[count].style.display = "block"
         }
     }
