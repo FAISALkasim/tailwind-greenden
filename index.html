@@ -19,9 +19,11 @@
     <!--Responsive navbar-->
 
     <nav class="bg-green-100 flex items-center justify-between p-3 shadow-2xl sticky top-0 z-10">
-        <hi class="text-2xl">Greenden</hi>
+        <h1 class="text-2xl">Greenden</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="size-6 w-6 h-6 md:hidden cursor-pointer">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -44,6 +46,33 @@
             </li>
         </ul>
     </nav>
+    <!--side nav-->
+    <section id="sidenav" class="bg-green-200 top-0 fixed z-20 text-center p-5 transform transition-all duration-1000"
+        style="width: 50%; height: 100vh; right: -50%;">
+
+        <div class="text-right">
+            <p id="closenav" class="cursor-pointer inline">X</p>
+        </div>
+
+        <ul class="flex flex-col gap-10">
+            <li>
+                <a href="index.html" class="text-gray-600 hover:underline hover:text-black">Home</a>
+            </li>
+
+            <li>
+                <a href="product.html" class="text-gray-600 hover:underline hover:text-black">Products</a>
+
+            </li>
+
+            <li>
+                <a href="contact.html" class="text-gray-600 hover:underline hover:text-black">Contact</a>
+
+            </li>
+        </ul>
+
+    </section>
+
+
 
     <!--header section-->
     <section class="p-5 bg-green-100 flex justify-center md:text-xl md:p-5">
@@ -135,13 +164,13 @@
 
             <div>
                 <img src="./images/best seller_3.png" alt="" style="display: inline;"
-                    class="shadow-2xl transform hover:-translate-y-2">
+                    class="hover:shadow-2xl transform hover:-translate-y-2">
                 <p>Nature Leaf</p>
             </div>
 
             <div>
                 <img src="./images/best seller_4.png" style="display: inline;"
-                    class="shadow-2xl transform hover:-translate-y-2">
+                    class="hover:shadow-2xl transform hover:-translate-y-2">
                 <p>Lilly Pot</p>
             </div>
         </div>
@@ -191,7 +220,8 @@
         <h1 class="font-bold text-3xl">Join Our News Letter</h1>
         <p class="mt-2">Sign-up for Email Newspaper to get a Exclusive discounts, Updates and mores</p>
 
-        <input type="text" placeholder="Search anything...." class="border border-black p-4 mt-4 container" style="width: 80%;">
+        <input type="text" placeholder="Search anything...." class="border border-black p-4 mt-4 container"
+            style="width: 80%;">
         <br>
         <button class="text-white bg-black p-3 rounded mt-4">Subscribe</button>
 
@@ -199,8 +229,8 @@
 
     <!--footer-->
 
-    <section class="bg-green-100 p-10 mt-4">
-        
+    <section class="bg-green-100 p-4 m-4">
+
         <h1 class="font-bold text-3xl">Greenden</h1>
 
         <p class="mt-5">This greenden will help for find more exclusive nature Explore it...</p>
@@ -208,7 +238,8 @@
 
     </section>
 
-    
+    <script src="index.js"></script>
+
 </body>
 
 </html>

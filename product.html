@@ -19,7 +19,7 @@
     <nav class="bg-green-100 flex items-center justify-between p-3 shadow-2xl sticky top-0 z-10">
         <hi class="text-2xl">Greenden</hi>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="size-6 w-6 h-6 md:hidden cursor-pointer">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -42,65 +42,91 @@
             </li>
         </ul>
     </nav>
+    <!--side nav-->
+    <section id="sidenav" class="bg-green-200 top-0 fixed z-20 text-center p-5 transform transition-all duration-1000"
+        style="width: 50%; height: 100vh; right: -50%;">
+
+        <div class="text-right">
+            <p id="closenav" class="cursor-pointer inline">X</p>
+        </div>
+
+        <ul class="flex flex-col gap-10">
+            <li>
+                <a href="index.html" class="text-gray-600 hover:underline hover:text-black">Home</a>
+            </li>
+
+            <li>
+                <a href="product.html" class="text-gray-600 hover:underline hover:text-black">Products</a>
+
+            </li>
+
+            <li>
+                <a href="contact.html" class="text-gray-600 hover:underline hover:text-black">Contact</a>
+
+            </li>
+        </ul>
+
+    </section>
     <!--products-->
     <section class="text-center p-3 m-4">
+        <div id="productContainer">
         <h1 class="font-bold text-2xl">Our Products</h1>
-        <input type="text" placeholder="Search products..." class="container border border-black mt-3 p-3 text-center"
+        <input id="search" type="text" placeholder="Search products..." class="container border border-black mt-3 p-3 text-center"
             style="width: 80%;">
-    </section>
+
 
     <!--seller-->
-
-    <section class="p-4 text-center m-10">
 
 
         <div class="grid grid-cols-2 gap-y-3 md:grid-cols-4 mt-5">
             <div>
                 <img src="./images/best seller_1.png" style="display: inline;"
                     class="hover:shadow-2xl transform hover:-translate-y-2">
-                <p>Flower Pot</p>
+                <h1>Flower Pot</h1>
             </div>
             <div>
                 <img src="./images/best seller_2.png" style="display: inline;"
                     class="hover:shadow-2xl transform hover:-translate-y-2">
-                <p>Spider Pot</p>
+                <h1>Spider Pot</h1>
             </div>
 
             <div>
                 <img src="./images/best seller_3.png" alt="" style="display: inline;"
                     class="shadow-2xl transform hover:-translate-y-2">
-                <p>Nature Leaf</p>
+                <h1>Nature Leaf</h1>
             </div>
 
             <div>
                 <img src="./images/best seller_4.png" style="display: inline;"
                     class="shadow-2xl transform hover:-translate-y-2">
-                <p>Lilly Pot</p>
+                <h1>Lilly Pot</h1>
             </div>
             <div>
                 <img src="./images/best-seller-5.png" style="display: inline;"
                     class="hover:shadow-2xl transform hover:-translate-y-2">
-                <p>Jass pot</p>
+                <h1>Jass pot</h1>
             </div>
             <div>
                 <img src="./images/best-seller-6.png" style="display: inline;"
                     class="hover:shadow-2xl transform hover:-translate-y-2">
-                <p>Snake Pot</p>
+                <h1>Snake Pot</h1>
             </div>
 
             <div>
                 <img src="./images/best-seller-7.png" alt="" style="display: inline;"
                     class="shadow-2xl transform hover:-translate-y-2">
-                <p>Jass pot</p>
+                <h1>Jass pot</h1>
             </div>
 
             <div>
                 <img src="./images/best-seller-8.png" style="display: inline;"
                     class="shadow-2xl transform hover:-translate-y-2">
-                <p>Dragon pot</p>
+                <h1>Dragon pot</h1>
             </div>
         </div>
 
+
+</div>
     </section>
 
 
@@ -115,6 +141,7 @@
 
     </section>
 
+    <script src="product.js"></script>
 
 </body>
 
